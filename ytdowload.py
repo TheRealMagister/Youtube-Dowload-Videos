@@ -9,4 +9,4 @@ def download_video(url):
 
 url = input("Enter the URL of the YouTube video (When the download is complete, a message will appear here, and the file will be available on the desktop): ")
 download_video(url)
-print("dowload completo!")
+print("full download!")
