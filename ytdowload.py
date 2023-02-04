@@ -7,6 +7,6 @@ def download_video(url):
     desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
     video.download(desktop)
 
-url = input("Insira a URL do vídeo do YouTube (Quando o dowload estiver completo ira aparecer uma mensagem aqui, e o arquivo estara disponivel na area de trabalho): ")
+url = input("Enter the URL of the YouTube video (When the download is complete, a message will appear here, and the file will be available on the desktop): ")
 download_video(url)
 print("dowload completo!")
