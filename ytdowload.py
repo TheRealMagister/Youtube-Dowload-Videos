@@ -6,7 +6,11 @@ def download_video(url):
     video = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
     desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
     video.download(desktop)
-
-url = input("Enter the URL of the YouTube video (When the download is complete, a message will appear here, and the file will be available on the desktop): ")
-download_video(url)
+    
+while True:
+    url = input("Enter the URL of the YouTube video (When the download is complete, a message will appear here, and the file will be available on the desktop): ")
+    if url == 'exit':
+        break
+    download_video(url)
+ 
 print("full download!")
